@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>nlp-repository</artifactId>
+    <artifactId>gpl-repository</artifactId>
 
     <name>WSO2 Carbon - Siddhi NLP Extension Repository</name>
     <packaging>pom</packaging>

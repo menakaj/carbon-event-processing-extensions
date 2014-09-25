@@ -17,7 +17,7 @@
     <url>http://wso2.org</url>
 
     <modules>
-        <module>nlp-repository</module>
+        <module>gpl-repository</module>
     </modules>
 
 </project>
