@@ -11,6 +11,12 @@
     
     <artifactId>org.wso2.carbon.gpl.event.processor.siddhi.extension</artifactId>
     <packaging>pom</packaging>
+
+    <name>WSO2 Carbon - Event Processor GPL Siddhi Extensions</name>
+    <description>This provides the GPL Siddhi Extensions to carbon
+    </description>
+    <url>http://wso2.org</url>
+
     <modules>
         <module>nlp-component</module>
     </modules>

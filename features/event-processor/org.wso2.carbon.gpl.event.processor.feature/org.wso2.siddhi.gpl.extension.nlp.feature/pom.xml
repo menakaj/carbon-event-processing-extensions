@@ -13,7 +13,7 @@
 
     <packaging>pom</packaging>
     <name>NLP Toolbox Query Extension Feature</name>
-
+    <url>http://wso2.org</url>
     <dependencies>
         <dependency>
             <groupId>org.wso2.carbon.gpl</groupId>

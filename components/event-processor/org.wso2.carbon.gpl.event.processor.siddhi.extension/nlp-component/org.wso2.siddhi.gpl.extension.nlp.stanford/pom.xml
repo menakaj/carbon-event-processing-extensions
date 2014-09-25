@@ -13,12 +13,14 @@
     <artifactId>org.wso2.siddhi.gpl.extension.nlp.stanford</artifactId>
     <version>3.4.0-wso2v1</version>
     <packaging>bundle</packaging>
-    <name>NLP Toolbox Library Bundle</name>
+
+    <name>NLP Toolbox stanford library bundle</name>
     <description>
         This bundle exports packages stanford-corenlp-3.4.jar and stanford-tregex-3.4.1.jar
     </description>
-
+    <url>http://wso2.org</url>
     <dependencies>
+
         <dependency>
             <groupId>edu.stanford.nlp</groupId>
             <artifactId>stanford-corenlp</artifactId>

@@ -10,8 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>org.wso2.siddhi.gpl.extension.nlp</artifactId>
     <packaging>bundle</packaging>
-    <name>NLP Toolbox Query Extension</name>
 
+    <name>WSO2 Carbon - Event Processor Siddhi NLP Extensions</name>
+    <description>This provides the NLP Siddhi Extensions to carbon
+    </description>
+    <url>http://wso2.org</url>
     <dependencies>
         <dependency>
             <groupId>org.wso2.siddhi</groupId>
