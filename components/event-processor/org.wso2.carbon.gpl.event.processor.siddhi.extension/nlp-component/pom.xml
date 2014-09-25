@@ -12,7 +12,7 @@
     <artifactId>nlp-component</artifactId>
     <packaging>pom</packaging>
 
-    <name>WSO2 Carbon - NLP component</name>
+    <name>WSO2 Carbon - NLP Component Siddhi Extension</name>
     <description>This provides the NLP Siddhi Extensions and Stanford library extension to carbon
     </description>
     <url>http://wso2.org</url>

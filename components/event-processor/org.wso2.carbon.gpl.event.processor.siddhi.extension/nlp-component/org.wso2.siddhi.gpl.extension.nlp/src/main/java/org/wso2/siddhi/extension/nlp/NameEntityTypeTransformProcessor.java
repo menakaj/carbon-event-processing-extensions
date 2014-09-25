@@ -5,7 +5,8 @@ import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.wso2.siddhi.core.config.SiddhiContext;
 import org.wso2.siddhi.core.event.Event;
 import org.wso2.siddhi.core.event.ListEvent;
@@ -34,7 +35,7 @@ import java.util.Properties;
 @SiddhiExtension(namespace = "nlp", function = "findNameEntityType")
 public class NameEntityTypeTransformProcessor extends TransformProcessor {
 
-    private static Logger logger = Logger.getLogger(NameEntityTypeTransformProcessor.class);
+    private static Log logger = LogFactory.getLog(NameEntityTypeTransformProcessor.class);
 
     private int inStreamParamPosition;
     private Constants.EntityType entityType;

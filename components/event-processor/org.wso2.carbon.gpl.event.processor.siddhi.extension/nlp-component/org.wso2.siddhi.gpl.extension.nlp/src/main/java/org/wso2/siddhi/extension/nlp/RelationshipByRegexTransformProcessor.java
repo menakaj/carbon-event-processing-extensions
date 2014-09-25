@@ -9,7 +9,8 @@ import edu.stanford.nlp.semgraph.semgrex.SemgrexMatcher;
 import edu.stanford.nlp.semgraph.semgrex.SemgrexParseException;
 import edu.stanford.nlp.semgraph.semgrex.SemgrexPattern;
 import edu.stanford.nlp.util.CoreMap;
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.wso2.siddhi.core.config.SiddhiContext;
 import org.wso2.siddhi.core.event.Event;
 import org.wso2.siddhi.core.event.ListEvent;
@@ -40,7 +41,7 @@ import java.util.regex.Pattern;
 @SiddhiExtension(namespace = "nlp", function = "findRelationshipByRegex")
 public class RelationshipByRegexTransformProcessor extends TransformProcessor {
 
-    private static Logger logger = Logger.getLogger(RelationshipByRegexTransformProcessor.class);
+    private static Log logger = LogFactory.getLog(RelationshipByRegexTransformProcessor.class);
     /**
      * represents {}=<word> pattern
      * used to find named nodes

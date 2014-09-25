@@ -14,7 +14,7 @@
     <version>3.4.0-wso2v1</version>
     <packaging>bundle</packaging>
 
-    <name>NLP Toolbox stanford library bundle</name>
+    <name>WSO2 Carbon - Siddhi NLP Extension - Stanford Library Bundle</name>
     <description>
         This bundle exports packages stanford-corenlp-3.4.jar and stanford-tregex-3.4.1.jar
     </description>

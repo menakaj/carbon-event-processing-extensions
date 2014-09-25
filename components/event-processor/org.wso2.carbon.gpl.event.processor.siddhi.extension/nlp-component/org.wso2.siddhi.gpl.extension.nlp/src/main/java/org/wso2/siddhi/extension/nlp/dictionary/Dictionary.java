@@ -1,6 +1,7 @@
 package org.wso2.siddhi.extension.nlp.dictionary;
 
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.wso2.siddhi.extension.nlp.utility.Constants;
 import org.xml.sax.SAXException;
 
@@ -19,7 +20,7 @@ import java.util.Set;
  * Created by malithi on 8/29/14.
  */
 public class Dictionary {
-    private static Logger logger = Logger.getLogger(Dictionary.class);
+    private static Log logger = LogFactory.getLog(Dictionary.class);
 
     private HashMap<String,Set<String>> store;
     private Constants.EntityType entityType;

@@ -1,5 +1,7 @@
 package org.wso2.siddhi.extension.nlp;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.log4j.Logger;
 import org.wso2.siddhi.core.config.SiddhiContext;
 import org.wso2.siddhi.core.event.Event;
@@ -29,7 +31,7 @@ import java.util.Set;
 @SiddhiExtension(namespace = "nlp", function = "findNameEntityTypeViaDictionary")
 public class NameEntityTypeViaDictionaryTransformProcessor extends TransformProcessor {
 
-    private static Logger logger = Logger.getLogger(NameEntityTypeViaDictionaryTransformProcessor.class);
+    private static Log logger = LogFactory.getLog(NameEntityTypeViaDictionaryTransformProcessor.class);
 
     private int inStreamParamPosition;
     private Constants.EntityType entityType;

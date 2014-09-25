@@ -12,7 +12,8 @@
     <packaging>bundle</packaging>
 
     <name>WSO2 Carbon - Event Processor Siddhi NLP Extensions</name>
-    <description>This provides the NLP Siddhi Extensions to carbon
+    <description>
+        This provides the NLP Siddhi Extensions to carbon
     </description>
     <url>http://wso2.org</url>
     <dependencies>
@@ -26,24 +27,8 @@
             <version>3.4.0-wso2v1</version>
         </dependency>
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.15</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.sun.jmx</groupId>
-                    <artifactId>jmxri</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.sun.jdmk</groupId>
-                    <artifactId>jmxtools</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>javax.jms</groupId>
-                    <artifactId>jms</artifactId>
-                </exclusion>
-            </exclusions>
-            <scope>compile</scope>
+            <groupId>org.wso2.carbon</groupId>
+            <artifactId>org.wso2.carbon.logging</artifactId>
         </dependency>
         <dependency>
             <groupId>junit</groupId>

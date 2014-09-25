@@ -6,7 +6,8 @@ import edu.stanford.nlp.ling.tokensregex.TokenSequencePattern;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.wso2.siddhi.core.config.SiddhiContext;
 import org.wso2.siddhi.core.event.Event;
 import org.wso2.siddhi.core.event.ListEvent;
@@ -35,7 +36,7 @@ import java.util.Properties;
 @SiddhiExtension(namespace = "nlp", function = "findTokensRegexPattern")
 public class TokensRegexPatternTransformProcessor extends TransformProcessor{
 
-    private static Logger logger = Logger.getLogger(TokensRegexPatternTransformProcessor.class);
+    private static Log logger = LogFactory.getLog(TokensRegexPatternTransformProcessor.class);
     private static final String groupPrefix = "group_";
 
     private int attributeCount;

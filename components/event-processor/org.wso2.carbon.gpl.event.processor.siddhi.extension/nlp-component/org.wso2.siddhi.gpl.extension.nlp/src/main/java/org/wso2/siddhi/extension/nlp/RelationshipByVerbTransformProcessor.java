@@ -9,7 +9,8 @@ import edu.stanford.nlp.semgraph.semgrex.SemgrexMatcher;
 import edu.stanford.nlp.semgraph.semgrex.SemgrexParseException;
 import edu.stanford.nlp.semgraph.semgrex.SemgrexPattern;
 import edu.stanford.nlp.util.CoreMap;
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.wso2.siddhi.core.config.SiddhiContext;
 import org.wso2.siddhi.core.event.ListEvent;
 import org.wso2.siddhi.core.event.in.InEvent;
@@ -37,7 +38,7 @@ import java.util.Set;
 @SiddhiExtension(namespace = "nlp", function = "findRelationshipByVerb")
 public class RelationshipByVerbTransformProcessor extends TransformProcessor {
 
-    private static Logger logger = Logger.getLogger(RelationshipByVerbTransformProcessor.class);
+    private static Log logger = LogFactory.getLog(RelationshipByVerbTransformProcessor.class);
     /**
      * Used to find subject, object and verb, where subject is optional
      */

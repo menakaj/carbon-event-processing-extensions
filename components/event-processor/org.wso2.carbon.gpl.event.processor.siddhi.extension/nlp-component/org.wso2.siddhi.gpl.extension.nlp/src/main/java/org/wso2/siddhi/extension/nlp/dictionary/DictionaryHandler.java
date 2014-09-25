@@ -1,6 +1,7 @@
 package org.wso2.siddhi.extension.nlp.dictionary;
 
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.wso2.siddhi.extension.nlp.utility.Constants;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
@@ -11,7 +12,7 @@ import org.xml.sax.helpers.DefaultHandler;
  * Created by malithi on 8/29/14.
  */
 public class DictionaryHandler extends DefaultHandler {
-    private static Logger logger = Logger.getLogger(DictionaryHandler.class);
+    private static Log logger = LogFactory.getLog(DictionaryHandler.class);
 
     private Constants.EntityType entityType;
     private Dictionary dictionary;

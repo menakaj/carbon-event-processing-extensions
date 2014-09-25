@@ -11,7 +11,7 @@
 
     <artifactId>nlp-repository</artifactId>
 
-    <name>NLP Toolbox Repository</name>
+    <name>WSO2 Carbon - Siddhi NLP Extension Repository</name>
     <packaging>pom</packaging>
 
     <build>
