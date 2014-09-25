@@ -3,18 +3,20 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.wso2.carbon.gpl</groupId>
-        <artifactId>features</artifactId>
-     <version/>
+
+    <groupId>org.wso2.carbon.gpl</groupId>
+    <artifactId>carbon-event-processing</artifactId>
+    <version>4.3.0-SNAPSHOT</version>
+    <relativePath>../../pom.xml</relativePath>
+
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.wso2.carbon.gpl</groupId>
-    <artifactId>repositories</artifactId>
-
+    <version>2.0.0-SNAPSHOT</version>
+    <artifactId>event-processor</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>nlp-features</module>
+        <module>org.wso2.carbon.gpl.event.processor.feature</module>
     </modules>
 
 </project>
