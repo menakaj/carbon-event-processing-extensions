@@ -8,14 +8,14 @@
     <artifactId>carbon-event-processing</artifactId>
     <packaging>pom</packaging>
     <version>4.3.0-SNAPSHOT</version>
-    <name>WSO2 Carbon - Carbon Event Processing Aggregator Module</name>
+    <name>WSO2 Carbon GPL - Carbon Event Processing Aggregator Module</name>
     <url>http://wso2.org</url>
 
     <modules>
-        <module>components/event-processor</module>
-        <module>features/event-processor</module>
-        <module>repositories</module>
+        <module>features/siddhi-extensions</module>
+        <module>repository</module>
     </modules>
+
         <dependencyManagement>
             <dependencies>
                 <dependency>

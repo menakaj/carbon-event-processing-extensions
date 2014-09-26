@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>org.wso2.carbon.gpl</groupId>
-        <artifactId>org.wso2.carbon.gpl.event.processor.feature</artifactId>
+        <artifactId>siddhi-extensions-feature</artifactId>
         <version>2.0.0-SNAPSHOT</version>
     </parent>
 
@@ -12,17 +12,17 @@
     <artifactId>org.wso2.siddhi.gpl.extension.nlp.feature</artifactId>
 
     <packaging>pom</packaging>
-    <name>NLP Toolbox Query Extension Feature</name>
+    <name>WSO2 Carbon GPL - Siddhi NLP Extension Feature</name>
     <url>http://wso2.org</url>
     <dependencies>
         <dependency>
-            <groupId>org.wso2.carbon.gpl</groupId>
-            <artifactId>org.wso2.siddhi.gpl.extension.nlp</artifactId>
-            <version>2.0.0-SNAPSHOT</version>
+            <groupId>org.wso2.siddhi.gpl</groupId>
+            <artifactId>nlp</artifactId>
+            <version>2.2.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>org.wso2.carbon.gpl</groupId>
-            <artifactId>org.wso2.siddhi.gpl.extension.nlp.stanford</artifactId>
+            <groupId>edu.stanford.nlp.wso2</groupId>
+            <artifactId>stanford-nlp</artifactId>
             <version>3.4.0-wso2v1</version>
         </dependency>
     </dependencies>
@@ -50,8 +50,8 @@
                                 </properties>
                             </adviceFile>
                             <bundles>
-                                <bundleDef>org.wso2.carbon.gpl:org.wso2.siddhi.gpl.extension.nlp</bundleDef>
-                                <bundleDef>org.wso2.carbon.gpl:org.wso2.siddhi.gpl.extension.nlp.stanford</bundleDef>
+                                <bundleDef>org.wso2.siddhi.gpl:nlp</bundleDef>
+                                <bundleDef>edu.stanford.nlp.wso2:stanford-nlp</bundleDef>
                             </bundles>
                         </configuration>
                     </execution>
