@@ -25,20 +25,20 @@
         <version>2.0.4-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>org.wso2.siddhi.gpl.extension.nlp.feature</artifactId>
+    <artifactId>org.wso2.siddhi.gpl.extension.r.feature</artifactId>
 
     <packaging>pom</packaging>
-    <name>WSO2 Carbon GPL - Siddhi NLP Extension Feature</name>
+    <name>WSO2 Carbon GPL - Siddhi R Extension Feature</name>
     <url>http://wso2.org</url>
 
     <dependencies>
         <dependency>
             <groupId>org.wso2.siddhi.gpl</groupId>
-            <artifactId>siddhi-gpl-extension-nlp</artifactId>
+            <artifactId>siddhi-gpl-extension-r</artifactId>
         </dependency>
         <dependency>
-            <groupId>edu.stanford.nlp.wso2</groupId>
-            <artifactId>stanford-nlp</artifactId>
+            <groupId>com.github.lucarosellini.rJava.wso2</groupId>
+            <artifactId>r-java</artifactId>
         </dependency>
     </dependencies>
 
@@ -55,7 +55,7 @@
                             <goal>p2-feature-gen</goal>
                         </goals>
                         <configuration>
-                            <id>org.wso2.siddhi.gpl.extension.nlp</id>
+                            <id>org.wso2.siddhi.gpl.extension.r</id>
                             <propertiesFile>../../etc/feature.properties</propertiesFile>
                             <adviceFile>
                                 <properties>
@@ -64,33 +64,14 @@
                                 </properties>
                             </adviceFile>
                             <bundles>
-                                <bundleDef>org.wso2.siddhi.gpl:siddhi-gpl-extension-nlp</bundleDef>
-                                <bundleDef>edu.stanford.nlp.wso2:stanford-nlp</bundleDef>
+                                <bundleDef>org.wso2.siddhi.gpl:siddhi-gpl-extension-r</bundleDef>
+                                <bundleDef>com.github.lucarosellini.rJava.wso2:r-java</bundleDef>
                             </bundles>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>clean_target</id>
-                        <phase>install</phase>
-                        <configuration>
-                            <tasks>
-                                <delete dir="src/main/resources"/>
-                                <delete dir="src/main"/>
-                                <delete dir="src"/>
-                            </tasks>
-                        </configuration>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+
         </plugins>
     </build>
 </project>

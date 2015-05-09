@@ -1,18 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2015 WSO2 Inc. (http://wso2.com)
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>org.wso2.carbon.gpl</groupId>
         <artifactId>carbon-event-processing</artifactId>
-        <version>4.3.0-SNAPSHOT</version>
-
+        <version>2.0.4-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>gpl-repository</artifactId>
 
-    <name>WSO2 Carbon GPL - Event Processing Repository</name>
+    <name>WSO2 Carbon GPL - Carbon Event Processing Repository</name>
     <packaging>pom</packaging>
 
     <build>
@@ -35,7 +51,16 @@
                             <publishArtifactRepository>true</publishArtifactRepository>
                             <featureArtifacts>
                                 <featureArtifactDef>
-                                    org.wso2.carbon.gpl:org.wso2.siddhi.gpl.extension.nlp.feature:2.0.0-SNAPSHOT
+                                    org.wso2.carbon.gpl:org.wso2.siddhi.gpl.extension.nlp.feature:${carbon.event.processing.gpl.version}
+                                </featureArtifactDef>
+                                <featureArtifactDef>
+                                    org.wso2.carbon.gpl:org.wso2.siddhi.gpl.extension.r.feature:${carbon.event.processing.gpl.version}
+                                </featureArtifactDef>
+                                <featureArtifactDef>
+                                    org.wso2.carbon.gpl:org.wso2.siddhi.gpl.extension.geo.feature:${carbon.event.processing.gpl.version}
+                                </featureArtifactDef>
+                                <featureArtifactDef>
+                                    org.wso2.carbon.gpl:org.wso2.siddhi.gpl.extension.evalscript.feature:${carbon.event.processing.gpl.version}
                                 </featureArtifactDef>
                             </featureArtifacts>
                         </configuration>
