@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2015 WSO2 Inc. (http://wso2.com)
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>siddhi-extensions-feature</artifactId>
+        <groupId>org.wso2.carbon.gpl</groupId>
+        <version>2.0.4-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>org.wso2.siddhi.gpl.extension.pmml.feature</artifactId>
+
+    <packaging>pom</packaging>
+    <name>WSO2 Carbon GPL - Siddhi PMML Extension Feature</name>
+    <url>http://wso2.org</url>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.wso2.siddhi.gpl</groupId>
+            <artifactId>siddhi-gpl-extension-pmml</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.orbit.org.jpmml</groupId>
+            <artifactId>pmml-model</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.orbit.org.jpmml</groupId>
+            <artifactId>pmml-manager</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.orbit.org.jpmml</groupId>
+            <artifactId>pmml-schema</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.orbit.org.jpmml</groupId>
+            <artifactId>pmml-evaluator</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.wso2.maven</groupId>
+                <artifactId>carbon-p2-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>p2-feature-generation</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>p2-feature-gen</goal>
+                        </goals>
+                        <configuration>
+                            <id>org.wso2.siddhi.gpl.extension.pmml</id>
+                            <propertiesFile>../../etc/feature.properties</propertiesFile>
+                            <adviceFile>
+                                <properties>
+                                    <propertyDef>org.wso2.carbon.p2.category.type:server</propertyDef>
+                                    <propertyDef>org.eclipse.equinox.p2.type.group:true</propertyDef>
+                                </properties>
+                            </adviceFile>
+                            <bundles>
+                                <bundleDef>org.wso2.siddhi.gpl:siddhi-gpl-extension-pmml</bundleDef>
+                                <bundleDef>org.wso2.orbit.org.jpmml:pmml-model</bundleDef>
+                                <bundleDef>org.wso2.orbit.org.jpmml:pmml-manager</bundleDef>
+                                <bundleDef>org.wso2.orbit.org.jpmml:pmml-schema</bundleDef>
+                                <bundleDef>org.wso2.orbit.org.jpmml:pmml-evaluator</bundleDef>
+                            </bundles>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

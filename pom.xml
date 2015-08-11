@@ -75,6 +75,11 @@
                 <artifactId>siddhi-gpl-extension-geo</artifactId>
                 <version>${siddhi.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.wso2.siddhi.gpl</groupId>
+                <artifactId>siddhi-gpl-extension-pmml</artifactId>
+                <version>${siddhi.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>edu.stanford.nlp.wso2</groupId>
@@ -95,6 +100,27 @@
                 <groupId>org.geotools.wso2</groupId>
                 <artifactId>gt-geojson</artifactId>
                 <version>${gt.geojson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.wso2.orbit.org.jpmml</groupId>
+                <artifactId>pmml-model</artifactId>
+                <version>${jpmml.model.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.wso2.orbit.org.jpmml</groupId>
+                <artifactId>pmml-manager</artifactId>
+                <version>${jpmml.manager.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.wso2.orbit.org.jpmml</groupId>
+                <artifactId>pmml-schema</artifactId>
+                <version>${jpmml.model.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.wso2.orbit.org.jpmml</groupId>
+                <artifactId>pmml-evaluator</artifactId>
+                <version>${jpmml.model.version}</version>
             </dependency>
 
             <!--features-->
@@ -122,6 +148,12 @@
                 <version>${carbon.event.processing.gpl.version}</version>
                 <type>zip</type>
             </dependency>
+            <dependency>
+                <groupId>org.wso2.carbon.gpl</groupId>
+                <artifactId>org.wso2.siddhi.gpl.extension.pmml.feature</artifactId>
+                <version>${carbon.event.processing.gpl.version}</version>
+                <type>zip</type>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
@@ -134,6 +166,8 @@
         <gson.version>2.2.4</gson.version>
         <gt.geojson.version>13.0.0-wso2v1</gt.geojson.version>
         <carbon.event.processing.gpl.version>2.0.4-SNAPSHOT</carbon.event.processing.gpl.version>
+        <jpmml.manager.version>1.1.16-wso2v1</jpmml.manager.version>
+        <jpmml.model.version>1.1.16-wso2v1</jpmml.model.version>
 
     </properties>
 
