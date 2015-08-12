@@ -82,12 +82,12 @@
             </dependency>
 
             <dependency>
-                <groupId>edu.stanford.nlp.wso2</groupId>
+                <groupId>org.wso2.orbit.edu.stanford.nlp</groupId>
                 <artifactId>stanford-nlp</artifactId>
                 <version>${stanford.nlp.wso2.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.github.lucarosellini.rJava.wso2</groupId>
+                <groupId>org.wso2.orbit.com.github.lucarosellini.rJava</groupId>
                 <artifactId>r-java</artifactId>
                 <version>${rjava.version}</version>
             </dependency>
@@ -97,7 +97,7 @@
                 <version>${gson.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.geotools.wso2</groupId>
+                <groupId>org.wso2.orbit.org.geotools</groupId>
                 <artifactId>gt-geojson</artifactId>
                 <version>${gt.geojson.version}</version>
             </dependency>
@@ -161,13 +161,13 @@
     <properties>
 
         <siddhi.version>3.0.0-SNAPSHOT</siddhi.version>
-        <stanford.nlp.wso2.version>3.4.0-wso2v1</stanford.nlp.wso2.version>
-        <rjava.version>0.9.7-wso2v1</rjava.version>
+        <stanford.nlp.wso2.version>3.4.0.wso2v1</stanford.nlp.wso2.version>
+        <rjava.version>0.9.7.wso2v1</rjava.version>
         <gson.version>2.2.4</gson.version>
-        <gt.geojson.version>13.0.0-wso2v1</gt.geojson.version>
+        <gt.geojson.version>13.0.0.wso2v1</gt.geojson.version>
         <carbon.event.processing.gpl.version>2.0.4-SNAPSHOT</carbon.event.processing.gpl.version>
-        <jpmml.manager.version>1.1.16-wso2v1</jpmml.manager.version>
-        <jpmml.model.version>1.1.16-wso2v1</jpmml.model.version>
+        <jpmml.manager.version>1.1.16.wso2v1</jpmml.manager.version>
+        <jpmml.model.version>1.1.16.wso2v1</jpmml.model.version>
 
     </properties>
 

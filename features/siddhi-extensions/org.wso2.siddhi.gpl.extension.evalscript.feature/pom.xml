@@ -37,7 +37,7 @@
             <artifactId>siddhi-gpl-extension-eval-script</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.github.lucarosellini.rJava.wso2</groupId>
+            <groupId>org.wso2.orbit.com.github.lucarosellini.rJava</groupId>
             <artifactId>r-java</artifactId>
         </dependency>
     </dependencies>
@@ -65,7 +65,7 @@
                             </adviceFile>
                             <bundles>
                                 <bundleDef>org.wso2.siddhi.gpl:siddhi-gpl-extension-eval-script</bundleDef>
-                                <bundleDef>com.github.lucarosellini.rJava.wso2:r-java</bundleDef>
+                                <bundleDef>org.wso2.orbit.com.github.lucarosellini.rJava:r-java</bundleDef>
                             </bundles>
                         </configuration>
                     </execution>
