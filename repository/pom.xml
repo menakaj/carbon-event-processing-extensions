@@ -62,6 +62,9 @@
                                 <featureArtifactDef>
                                     org.wso2.carbon.gpl:org.wso2.siddhi.gpl.extension.evalscript.feature:${carbon.event.processing.gpl.version}
                                 </featureArtifactDef>
+                                <featureArtifactDef>
+                                    org.wso2.carbon.gpl:org.wso2.siddhi.gpl.extension.pmml.feature:${carbon.event.processing.gpl.version}
+                                </featureArtifactDef>
                             </featureArtifacts>
                         </configuration>
                     </execution>
@@ -69,6 +72,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

@@ -41,7 +41,7 @@
             <artifactId>gson</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.geotools.wso2</groupId>
+            <groupId>org.wso2.orbit.org.geotools</groupId>
             <artifactId>gt-geojson</artifactId>
         </dependency>
     </dependencies>
@@ -70,7 +70,7 @@
                             <bundles>
                                 <bundleDef>org.wso2.siddhi.gpl:siddhi-gpl-extension-geo</bundleDef>
                                 <bundleDef>com.google.code.gson:gson</bundleDef>
-                                <bundleDef>org.geotools.wso2:gt-geojson</bundleDef>
+                                <bundleDef>org.wso2.orbit.org.geotools:gt-geojson</bundleDef>
                             </bundles>
                         </configuration>
                     </execution>

@@ -37,7 +37,7 @@
             <artifactId>siddhi-gpl-extension-nlp</artifactId>
         </dependency>
         <dependency>
-            <groupId>edu.stanford.nlp.wso2</groupId>
+            <groupId>org.wso2.orbit.edu.stanford.nlp</groupId>
             <artifactId>stanford-nlp</artifactId>
         </dependency>
     </dependencies>
@@ -65,7 +65,7 @@
                             </adviceFile>
                             <bundles>
                                 <bundleDef>org.wso2.siddhi.gpl:siddhi-gpl-extension-nlp</bundleDef>
-                                <bundleDef>edu.stanford.nlp.wso2:stanford-nlp</bundleDef>
+                                <bundleDef>org.wso2.orbit.edu.stanford.nlp:stanford-nlp</bundleDef>
                             </bundles>
                         </configuration>
                     </execution>
