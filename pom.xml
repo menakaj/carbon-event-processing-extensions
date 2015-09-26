@@ -58,22 +58,22 @@
             <dependency>
                 <groupId>org.wso2.siddhi.gpl</groupId>
                 <artifactId>siddhi-gpl-extension-nlp</artifactId>
-                <version>${siddhi.version}</version>
+                <version>${siddhi.gpl.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.wso2.siddhi.gpl</groupId>
                 <artifactId>siddhi-gpl-extension-r</artifactId>
-                <version>${siddhi.version}</version>
+                <version>${siddhi.gpl.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.wso2.siddhi.gpl</groupId>
                 <artifactId>siddhi-gpl-extension-eval-script</artifactId>
-                <version>${siddhi.version}</version>
+                <version>${siddhi.gpl.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.wso2.siddhi.gpl</groupId>
                 <artifactId>siddhi-gpl-extension-geo</artifactId>
-                <version>${siddhi.version}</version>
+                <version>${siddhi.gpl.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.wso2.siddhi.gpl</groupId>
@@ -160,7 +160,7 @@
 
     <properties>
 
-        <siddhi.version>3.0.0-SNAPSHOT</siddhi.version>
+        <siddhi.gpl.version>3.0.0</siddhi.gpl.version>
         <stanford.nlp.wso2.version>3.4.0.wso2v1</stanford.nlp.wso2.version>
         <rjava.version>0.9.7.wso2v1</rjava.version>
         <gson.version>2.2.4</gson.version>
