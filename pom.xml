@@ -78,7 +78,7 @@
             <dependency>
                 <groupId>org.wso2.siddhi.gpl</groupId>
                 <artifactId>siddhi-gpl-extension-pmml</artifactId>
-                <version>${siddhi.version}</version>
+                <version>${siddhi.gpl.version}</version>
             </dependency>
 
             <dependency>
