@@ -20,15 +20,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.wso2.carbon.gpl</groupId>
-        <artifactId>carbon-event-processing</artifactId>
+        <groupId>org.wso2.gpl.carbon.event.processing.extensions</groupId>
+        <artifactId>carbon-event-processing-extensions</artifactId>
         <version>2.0.4-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>gpl-repository</artifactId>
+    <artifactId>carbon-event-processing-extensions-gpl-repository</artifactId>
 
-    <name>WSO2 Carbon GPL - Carbon Event Processing Repository</name>
+    <name>WSO2 GPL Carbon - Carbon Event Processing Extensions Repository</name>
     <packaging>pom</packaging>
 
     <build>
@@ -51,19 +51,19 @@
                             <publishArtifactRepository>true</publishArtifactRepository>
                             <featureArtifacts>
                                 <featureArtifactDef>
-                                    org.wso2.carbon.gpl:org.wso2.siddhi.gpl.extension.nlp.feature:${carbon.event.processing.gpl.version}
+                                    org.wso2.gpl.carbon.event.processing.extensions:org.wso2.gpl.siddhi.extension.nlp.feature:${carbon.event.processing.gpl.version}
                                 </featureArtifactDef>
                                 <featureArtifactDef>
-                                    org.wso2.carbon.gpl:org.wso2.siddhi.gpl.extension.r.feature:${carbon.event.processing.gpl.version}
+                                    org.wso2.gpl.carbon.event.processing.extensions:org.wso2.gpl.siddhi.extension.r.feature:${carbon.event.processing.gpl.version}
                                 </featureArtifactDef>
                                 <featureArtifactDef>
-                                    org.wso2.carbon.gpl:org.wso2.siddhi.gpl.extension.geo.feature:${carbon.event.processing.gpl.version}
+                                    org.wso2.gpl.carbon.event.processing.extensions:org.wso2.gpl.siddhi.extension.geo.feature:${carbon.event.processing.gpl.version}
                                 </featureArtifactDef>
                                 <featureArtifactDef>
-                                    org.wso2.carbon.gpl:org.wso2.siddhi.gpl.extension.evalscript.feature:${carbon.event.processing.gpl.version}
+                                    org.wso2.gpl.carbon.event.processing.extensions:org.wso2.gpl.siddhi.extension.evalscript.feature:${carbon.event.processing.gpl.version}
                                 </featureArtifactDef>
                                 <featureArtifactDef>
-                                    org.wso2.carbon.gpl:org.wso2.siddhi.gpl.extension.pmml.feature:${carbon.event.processing.gpl.version}
+                                    org.wso2.gpl.carbon.event.processing.extensions:org.wso2.gpl.siddhi.extension.pmml.feature:${carbon.event.processing.gpl.version}
                                 </featureArtifactDef>
                             </featureArtifacts>
                         </configuration>

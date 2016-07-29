@@ -15,41 +15,30 @@
   ~ You should have received a copy of the GNU General Public License
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
+        <groupId>org.wso2.gpl.carbon.event.processing.extensions</groupId>
         <artifactId>siddhi-extensions-feature</artifactId>
-        <groupId>org.wso2.carbon.gpl</groupId>
         <version>2.0.4-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>org.wso2.siddhi.gpl.extension.pmml.feature</artifactId>
+    <artifactId>org.wso2.gpl.siddhi.extension.evalscript.feature</artifactId>
 
     <packaging>pom</packaging>
-    <name>WSO2 Carbon GPL - Siddhi PMML Extension Feature</name>
+    <name>WSO2 Carbon GPL - Siddhi Eval Script Extension Feature</name>
     <url>http://wso2.org</url>
 
     <dependencies>
         <dependency>
-            <groupId>org.wso2.siddhi.gpl</groupId>
-            <artifactId>siddhi-gpl-extension-pmml</artifactId>
+            <groupId>org.wso2.gpl.siddhi.extensions</groupId>
+            <artifactId>siddhi-extension-gpl-eval-script</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.wso2.orbit.org.jpmml</groupId>
-            <artifactId>pmml-model</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.wso2.orbit.org.jpmml</groupId>
-            <artifactId>pmml-manager</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.wso2.orbit.org.jpmml</groupId>
-            <artifactId>pmml-schema</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.wso2.orbit.org.jpmml</groupId>
-            <artifactId>pmml-evaluator</artifactId>
+            <groupId>org.wso2.orbit.com.github.lucarosellini.rJava</groupId>
+            <artifactId>r-java</artifactId>
         </dependency>
     </dependencies>
 
@@ -66,7 +55,7 @@
                             <goal>p2-feature-gen</goal>
                         </goals>
                         <configuration>
-                            <id>org.wso2.siddhi.gpl.extension.pmml</id>
+                            <id>org.wso2.gpl.siddhi.extension.evalscript</id>
                             <propertiesFile>../../etc/feature.properties</propertiesFile>
                             <adviceFile>
                                 <properties>
@@ -75,17 +64,14 @@
                                 </properties>
                             </adviceFile>
                             <bundles>
-                                <bundleDef>org.wso2.siddhi.gpl:siddhi-gpl-extension-pmml</bundleDef>
-                                <bundleDef>org.wso2.orbit.org.jpmml:pmml-model</bundleDef>
-                                <bundleDef>org.wso2.orbit.org.jpmml:pmml-manager</bundleDef>
-                                <bundleDef>org.wso2.orbit.org.jpmml:pmml-schema</bundleDef>
-                                <bundleDef>org.wso2.orbit.org.jpmml:pmml-evaluator</bundleDef>
+                                <bundleDef>org.wso2.gpl.siddhi.extensions:siddhi-extension-gpl-eval-script</bundleDef>
+                                <bundleDef>org.wso2.orbit.com.github.lucarosellini.rJava:r-java</bundleDef>
                             </bundles>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
     </build>
-
 </project>

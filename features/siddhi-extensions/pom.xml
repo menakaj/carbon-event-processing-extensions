@@ -20,23 +20,23 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.wso2.carbon.gpl</groupId>
-        <artifactId>carbon-event-processing</artifactId>
+        <groupId>org.wso2.gpl.carbon.event.processing.extensions</groupId>
+        <artifactId>carbon-event-processing-extensions</artifactId>
         <version>2.0.4-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>siddhi-extensions-feature</artifactId>
     <packaging>pom</packaging>
-    <name>WSO2 Carbon GPL - Siddhi Extensions Aggregate Feature</name>
+    <name>WSO2 GPL Carbon - Siddhi Extensions Aggregate Feature</name>
     <url>http://wso2.org</url>
 
     <modules>
-        <module>org.wso2.siddhi.gpl.extension.nlp.feature</module>
-        <module>org.wso2.siddhi.gpl.extension.r.feature</module>
-        <module>org.wso2.siddhi.gpl.extension.evalscript.feature</module>
-        <module>org.wso2.siddhi.gpl.extension.geo.feature</module>
-        <module>org.wso2.siddhi.gpl.extension.pmml.feature</module>
+        <module>org.wso2.gpl.siddhi.extension.nlp.feature</module>
+        <module>org.wso2.gpl.siddhi.extension.r.feature</module>
+        <module>org.wso2.gpl.siddhi.extension.evalscript.feature</module>
+        <module>org.wso2.gpl.siddhi.extension.geo.feature</module>
+        <module>org.wso2.gpl.siddhi.extension.pmml.feature</module>
     </modules>
 
 </project>

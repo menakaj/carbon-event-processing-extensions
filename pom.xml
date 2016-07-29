@@ -26,12 +26,12 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.wso2.carbon.gpl</groupId>
-    <artifactId>carbon-event-processing</artifactId>
+    <groupId>org.wso2.gpl.carbon.event.processing.extensions</groupId>
+    <artifactId>carbon-event-processing-extensions</artifactId>
     <packaging>pom</packaging>
 
     <version>2.0.4-SNAPSHOT</version>
-    <name>WSO2 Carbon GPL - Carbon Event Processing Aggregator Module</name>
+    <name>WSO2 GPL Carbon - Carbon Event Processing Extensions Aggregator Module</name>
     <url>http://wso2.org</url>
 
     <licenses>
@@ -47,38 +47,38 @@
     </modules>
 
     <scm>
-        <url>https://github.com/wso2-gpl/carbon-event-processing.git</url>
-        <developerConnection>scm:git:https://github.com/wso2-gpl/carbon-event-processing.git</developerConnection>
-        <connection>scm:git:https://github.com/wso2-gpl/carbon-event-processing.git</connection>
+        <url>https://github.com/wso2-gpl/carbon-event-processing-extensions.git</url>
+        <developerConnection>scm:git:https://github.com/wso2-gpl/carbon-event-processing-extensions.git</developerConnection>
+        <connection>scm:git:https://github.com/wso2-gpl/carbon-event-processing-extensions.git</connection>
         <tag>HEAD</tag>
     </scm>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.wso2.siddhi.gpl</groupId>
-                <artifactId>siddhi-gpl-extension-nlp</artifactId>
-                <version>${siddhi.gpl.version}</version>
+                <groupId>org.wso2.gpl.siddhi.extensions</groupId>
+                <artifactId>siddhi-extension-gpl-nlp</artifactId>
+                <version>${siddhi.extension.gpl.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.wso2.siddhi.gpl</groupId>
-                <artifactId>siddhi-gpl-extension-r</artifactId>
-                <version>${siddhi.gpl.version}</version>
+                <groupId>org.wso2.gpl.siddhi.extensions</groupId>
+                <artifactId>siddhi-extension-gpl-r</artifactId>
+                <version>${siddhi.extension.gpl.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.wso2.siddhi.gpl</groupId>
-                <artifactId>siddhi-gpl-extension-eval-script</artifactId>
-                <version>${siddhi.gpl.version}</version>
+                <groupId>org.wso2.gpl.siddhi.extensions</groupId>
+                <artifactId>siddhi-extension-gpl-eval-script</artifactId>
+                <version>${siddhi.extension.gpl.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.wso2.siddhi.gpl</groupId>
-                <artifactId>siddhi-gpl-extension-geo</artifactId>
-                <version>${siddhi.gpl.version}</version>
+                <groupId>org.wso2.gpl.siddhi.extensions</groupId>
+                <artifactId>siddhi-extension-gpl-geo</artifactId>
+                <version>${siddhi.extension.gpl.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.wso2.siddhi.gpl</groupId>
-                <artifactId>siddhi-gpl-extension-pmml</artifactId>
-                <version>${siddhi.gpl.version}</version>
+                <groupId>org.wso2.gpl.siddhi.extensions</groupId>
+                <artifactId>siddhi-extension-gpl-pmml</artifactId>
+                <version>${siddhi.extension.gpl.version}</version>
             </dependency>
 
             <dependency>
@@ -125,32 +125,32 @@
 
             <!--features-->
             <dependency>
-                <groupId>org.wso2.carbon.gpl</groupId>
-                <artifactId>org.wso2.siddhi.gpl.extension.nlp.feature</artifactId>
+                <groupId>org.wso2.gpl.carbon.event.processing.extensions</groupId>
+                <artifactId>org.wso2.gpl.siddhi.extension.nlp.feature</artifactId>
                 <version>${carbon.event.processing.gpl.version}</version>
                 <type>zip</type>
             </dependency>
             <dependency>
-                <groupId>org.wso2.carbon.gpl</groupId>
-                <artifactId>org.wso2.siddhi.gpl.extension.geo.feature</artifactId>
+                <groupId>org.wso2.gpl.carbon.event.processing.extensions</groupId>
+                <artifactId>org.wso2.gpl.siddhi.extension.geo.feature</artifactId>
                 <version>${carbon.event.processing.gpl.version}</version>
                 <type>zip</type>
             </dependency>
             <dependency>
-                <groupId>org.wso2.carbon.gpl</groupId>
-                <artifactId>org.wso2.siddhi.gpl.extension.r.feature</artifactId>
+                <groupId>org.wso2.gpl.carbon.event.processing.extensions</groupId>
+                <artifactId>org.wso2.gpl.siddhi.extension.r.feature</artifactId>
                 <version>${carbon.event.processing.gpl.version}</version>
                 <type>zip</type>
             </dependency>
             <dependency>
-                <groupId>org.wso2.carbon.gpl</groupId>
-                <artifactId>org.wso2.siddhi.gpl.extension.evalscript.feature</artifactId>
+                <groupId>org.wso2.gpl.carbon.event.processing.extensions</groupId>
+                <artifactId>org.wso2.gpl.siddhi.extension.evalscript.feature</artifactId>
                 <version>${carbon.event.processing.gpl.version}</version>
                 <type>zip</type>
             </dependency>
             <dependency>
-                <groupId>org.wso2.carbon.gpl</groupId>
-                <artifactId>org.wso2.siddhi.gpl.extension.pmml.feature</artifactId>
+                <groupId>org.wso2.gpl.carbon.event.processing.extensions</groupId>
+                <artifactId>org.wso2.gpl.siddhi.extension.pmml.feature</artifactId>
                 <version>${carbon.event.processing.gpl.version}</version>
                 <type>zip</type>
             </dependency>
@@ -160,7 +160,7 @@
 
     <properties>
 
-        <siddhi.gpl.version>3.0.0-SNAPSHOT</siddhi.gpl.version>
+        <siddhi.extension.gpl.version>3.0.0-SNAPSHOT</siddhi.extension.gpl.version>
         <stanford.nlp.wso2.version>3.4.0.wso2v1</stanford.nlp.wso2.version>
         <rjava.version>0.9.7.wso2v1</rjava.version>
         <gson.version>2.2.4</gson.version>
@@ -300,15 +300,14 @@
 
     <distributionManagement>
         <repository>
-            <id>wso2.releases</id>
-            <name>WSO2 internal Repository</name>
-            <url>http://maven.wso2.org/nexus/content/repositories/releases/</url>
+            <id>wso2.gpl.releases</id>
+            <name>WSO2 GPL Maven Repository</name>
+            <url>http://maven.wso2.org/nexus/content/repositories/wso2gpl/</url>
         </repository>
-
         <snapshotRepository>
-            <id>wso2.snapshots</id>
-            <name>WSO2 Snapshot Repository</name>
-            <url>http://maven.wso2.org/nexus/content/repositories/snapshots/</url>
+            <id>wso2.gpl.snapshots</id>
+            <name>WSO2 GPL Maven Snapshot Repository</name>
+            <url>http://maven.wso2.org/nexus/content/repositories/wso2gpl-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
