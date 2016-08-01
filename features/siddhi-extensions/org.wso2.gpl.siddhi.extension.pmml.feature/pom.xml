@@ -51,6 +51,12 @@
             <groupId>org.wso2.orbit.org.jpmml</groupId>
             <artifactId>pmml-evaluator</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.wso2.orbit.joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>${joda.time.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -80,6 +86,7 @@
                                 <bundleDef>org.wso2.orbit.org.jpmml:pmml-manager</bundleDef>
                                 <bundleDef>org.wso2.orbit.org.jpmml:pmml-schema</bundleDef>
                                 <bundleDef>org.wso2.orbit.org.jpmml:pmml-evaluator</bundleDef>
+                                <bundleDef>org.wso2.orbit.joda-time:joda-time</bundleDef>
                             </bundles>
                         </configuration>
                     </execution>
