@@ -55,7 +55,7 @@
                 <executions>
                     <execution>
                         <id>clean_target</id>
-                        <phase>install</phase>
+                        <phase>verify</phase>
                         <configuration>
                             <target>
                                 <delete file="target/${project.artifactId}-${project.version}.jar"/>
