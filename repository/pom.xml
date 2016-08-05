@@ -75,7 +75,7 @@
                 <executions>
                     <execution>
                         <id>2-p2-repo-generation</id>
-                        <phase>package</phase>
+                        <phase>prepare-package</phase>
                         <goals>
                             <goal>p2-repo-gen</goal>
                         </goals>
@@ -110,13 +110,13 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>dist</id>
+                        <id>p2-repo</id>
                         <phase>package</phase>
                         <goals>
                             <goal>attached</goal>
                         </goals>
                         <configuration>
-                            <appendAssemblyId>false</appendAssemblyId>
+                            <finalName>${project.parent.artifactId}-${project.version}</finalName>
                             <descriptors>
                                 <descriptor>${basedir}/src/assembly/dist.xml</descriptor>
                             </descriptors>
